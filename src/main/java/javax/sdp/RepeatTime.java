@@ -38,28 +38,28 @@ public interface RepeatTime extends Field {
      * @throws SdpParseException
      * @return the "repeat interval" in seconds.
      */    
-    public int getRepeatInterval()
+    public long getRepeatInterval()
                       throws SdpParseException;
     
     /** Set the "repeat interval" in seconds.
      * @param repeatInterval the "repeat interval" in seconds.
      * @throws SdpException if repeatInterval is <0
      */    
-    public void setRepeatInterval(int repeatInterval)
+    public void setRepeatInterval(long repeatInterval)
                        throws SdpException;
     
     /** Returns the "active duration" in seconds.
      * @throws SdpParseException
      * @return the "active duration" in seconds.
      */    
-    public int getActiveDuration()
+    public long getActiveDuration()
                       throws SdpParseException;
     
     /** Sets the "active duration" in seconds.
      * @param activeDuration the "active duration" in seconds.
      * @throws SdpException if the active duration is <0
      */    
-    public void setActiveDuration(int activeDuration)
+    public void setActiveDuration(long activeDuration)
                        throws SdpException;
     
     /** Returns the list of offsets. These are relative to the start-time given

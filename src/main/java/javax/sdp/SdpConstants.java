@@ -31,19 +31,19 @@ public interface SdpConstants {
      * An int greater than or equal to 0 and less than AVP_DEFINED_STATIC_MAX,
      * but has not been assigned a value.
      */
-    public static final String RESERVED="0";
+    public static final String RESERVED="RESERVED";
 
     /** Unassigned Payload type.
      * An int greater than or equal to AVP_DEFINED_STATIC_MAX and less than
      * AVP_DYNAMIC_MIN - currently
      * unassigned.
      */
-    public static final String UNASSIGNED="35";
+    public static final String UNASSIGNED="UNASSIGNED";
 
     /** Dynamic Payload type.
      * Any int less than 0 or greater than or equal to AVP_DYNAMIC_MIN
      */
-     public static final String DYNAMIC="-35";
+     public static final String DYNAMIC="DYNAMIC";
 
      /** RTP/AVP Protocol
       */
@@ -57,7 +57,7 @@ public interface SdpConstants {
 
     /** RTP mapping attribute.
      */
-    public static final String FMTP="FMTP";
+    public static final String FMTP="fmtp";
 
     /** Static RTP/AVP payload type for the PCMU audio codec.
      */
@@ -173,7 +173,7 @@ public interface SdpConstants {
 
     /** The minimum defined dynamic format value
      */
-    public static final int AVP_DYNAMIC_MIN=-35;
+    public static final int AVP_DYNAMIC_MIN=96;
 
     /** Names of AVP (Audio-Video Profile) payload types indexed on their static
      * payload types.

@@ -39,10 +39,10 @@ public interface SessionDescription extends Serializable, Cloneable{
     public Version getVersion();
     
     /** Sets the version of SDP in use. This corresponds to the v= field of the SDP data.
-     * @param v version - the integer version.
+     * @param version - the integer version.
      * @throws SdpException if the version is null
      */
-    public void setVersion(Version v)
+    public void setVersion(Version version)
                 throws SdpException;
 
     /** Returns information about the originator of the session. This corresponds
@@ -80,10 +80,10 @@ public interface SessionDescription extends Serializable, Cloneable{
     public Info getInfo();
 
     /** Sets the i= field of this object.
-     * @param i s - new i= value; if null removes the field
+     * @param info s - new i= value; if null removes the field
      * @throws SdpException if the info is null
      */
-    public void setInfo(Info i)
+    public void setInfo(Info info)
              throws SdpException;
 
     /** Returns a uri to the location of more details about the session.
